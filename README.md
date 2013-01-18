@@ -42,6 +42,8 @@ By default, if the badge isn't already baked when going into the
 backpack, we automatically do that and show the baked version of the
 badge to the user.
 
+(Note: the demo badges received from /demo/ballertime are not baked.)
+
 # So what's this?
 
 When someone sees a baked openbadge out in the wild, they should be able to:
