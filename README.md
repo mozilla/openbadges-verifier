@@ -36,7 +36,7 @@ their server that responds an assertion and the content-type
 In addition to the above, we have the concept of a **baked badge**. A
 baked badge is a PNG that has, embedded in the `iTXt` metadata field of
 the image, the URL pointing to the assertion that proves that a user has
-earned the badge being represented.
+earned the badge being represented (with the keyword `openbadges`)
 
 By default, if the badge isn't already baked when going into the
 backpack, we automatically do that and show the baked version of the
@@ -67,3 +67,9 @@ entering an email address to verify against the badge
 
 4) On submit, verifier says "yes, this badge belongs to that user" or "no, that badge belongs to another user".
 
+# Necessary libraries
+
+* Something to read PNG chunks out of a PNG.
+  * node: https://github.com/mozilla/openbadges-bakery (or, more low-level, https://github.com/brianloveswords/streampng)
+  * ruby: https://github.com/wvanbergen/chunky_png
+  * python: http://packages.python.org/pypng/png.html
